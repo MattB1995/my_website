@@ -97,6 +97,11 @@ h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 .section__title {
     margin-bottom: 0.25em;
 }
@@ -218,6 +223,21 @@ header {
 
 .hamburger::after {
     bottom: 6px;
+}
+
+.nav-open .nav{
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger,
+.nav-open .hamburger::before,
+.nav-open .hamburger::after  {
+    background-color: var(--clr-accent);
+
 }
 
 
@@ -445,4 +465,17 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
